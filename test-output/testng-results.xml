@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="91" started-at="2017-10-29T19:08:31Z" finished-at="2017-10-29T19:08:31Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="91" started-at="2017-10-29T19:08:31Z" finished-at="2017-10-29T19:08:31Z">
+      <class name="framework.Dependency">
+        <test-method status="PASS" signature="Openbrowser()[pri:0, instance:framework.Dependency@2669b199]" name="Openbrowser" duration-ms="23" started-at="2017-10-30T00:38:31Z" finished-at="2017-10-30T00:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Openbrowser -->
+        <test-method status="PASS" signature="Timereleted()[pri:0, instance:framework.Dependency@2669b199]" name="Timereleted" duration-ms="15" started-at="2017-10-30T00:38:31Z" finished-at="2017-10-30T00:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Timereleted -->
+        <test-method status="PASS" signature="Flightbooking()[pri:0, instance:framework.Dependency@2669b199]" name="Flightbooking" duration-ms="2" started-at="2017-10-30T00:38:31Z" depends-on-methods="framework.Dependency.Openbrowser" finished-at="2017-10-30T00:38:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Flightbooking -->
+      </class> <!-- framework.Dependency -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
