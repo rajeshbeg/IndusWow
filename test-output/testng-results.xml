@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" ignored="3" total="4" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="91" started-at="2017-10-29T19:08:31Z" finished-at="2017-10-29T19:08:31Z">
+  <suite name="Default suite" duration-ms="67091" started-at="2018-06-13T14:33:02Z" finished-at="2018-06-13T14:34:10Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="91" started-at="2017-10-29T19:08:31Z" finished-at="2017-10-29T19:08:31Z">
-      <class name="framework.Dependency">
-        <test-method status="PASS" signature="Openbrowser()[pri:0, instance:framework.Dependency@2669b199]" name="Openbrowser" duration-ms="23" started-at="2017-10-30T00:38:31Z" finished-at="2017-10-30T00:38:31Z">
+    <test name="Default test" duration-ms="67091" started-at="2018-06-13T14:33:02Z" finished-at="2018-06-13T14:34:10Z">
+      <class name="com.indusos.plusi.Wowmain">
+        <test-method status="PASS" signature="setValue()[pri:0, instance:com.indusos.plusi.Wowmain@27c20538]" name="setValue" is-config="true" duration-ms="57486" started-at="2018-06-13T20:03:02Z" finished-at="2018-06-13T20:04:00Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Openbrowser -->
-        <test-method status="PASS" signature="Timereleted()[pri:0, instance:framework.Dependency@2669b199]" name="Timereleted" duration-ms="15" started-at="2017-10-30T00:38:31Z" finished-at="2017-10-30T00:38:31Z">
+        </test-method> <!-- setValue -->
+        <test-method status="FAIL" signature="SwipeTest1()[pri:1, instance:com.indusos.plusi.Wowmain@27c20538]" name="SwipeTest1" duration-ms="9482" started-at="2018-06-13T20:04:00Z" finished-at="2018-06-13T20:04:09Z">
+          <exception class="org.openqa.selenium.remote.SessionNotFoundException">
+            <message>
+              <![CDATA[A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 16 millisecondsBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'Rajesh-IN11', ip: '192.168.1.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152'Driver info: io.appium.java_client.android.AndroidDriverCapabilities [{appPackage=com.android.vending, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=0123456789ABCDEF, platform=LINUX, deviceUDID=0123456789ABCDEF, appActivity=com.android.vending.AssetBrowserActivity, desired={appPackage=com.android.vending, appActivity=com.android.vending.AssetBrowserActivity, platformVersion=6.0, platformName=Android, deviceName=WCYDCUJ7ZTRGMNWO}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Micromax Q386, platformName=Android, deviceManufacturer=Micromax}]Session ID: 135bde51-76d7-4db4-be1a-877b69b3da3e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.SessionNotFoundException: A session is either terminated or not started (WARNING: The server did not provide any stacktrace information)Command duration or timeout: 16 millisecondsBuild info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'System info: host: 'Rajesh-IN11', ip: '192.168.1.39', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152'Driver info: io.appium.java_client.android.AndroidDriverCapabilities [{appPackage=com.android.vending, deviceScreenSize=720x1280, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, deviceName=0123456789ABCDEF, platform=LINUX, deviceUDID=0123456789ABCDEF, appActivity=com.android.vending.AssetBrowserActivity, desired={appPackage=com.android.vending, appActivity=com.android.vending.AssetBrowserActivity, platformVersion=6.0, platformName=Android, deviceName=WCYDCUJ7ZTRGMNWO}, platformVersion=6.0, webStorageEnabled=false, locationContextEnabled=false, takesScreenshot=true, javascriptEnabled=true, deviceModel=Micromax Q386, platformName=Android, deviceManufacturer=Micromax}]Session ID: 135bde51-76d7-4db4-be1a-877b69b3da3eat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)at java.lang.reflect.Constructor.newInstance(Unknown Source)at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:40)at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:336)at io.appium.java_client.TouchAction.perform(TouchAction.java:323)at io.appium.java_client.AppiumDriver.doSwipe(AppiumDriver.java:383)at io.appium.java_client.android.AndroidDriver.swipe(AndroidDriver.java:186)at com.indusos.plusi.PageNavigation.Scrollleft(PageNavigation.java:29)at com.indusos.plusi.Wowmain.SwipeTest1(Wowmain.java:69)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.SessionNotFoundException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Timereleted -->
-        <test-method status="PASS" signature="Flightbooking()[pri:0, instance:framework.Dependency@2669b199]" name="Flightbooking" duration-ms="2" started-at="2017-10-30T00:38:31Z" depends-on-methods="framework.Dependency.Openbrowser" finished-at="2017-10-30T00:38:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Flightbooking -->
-      </class> <!-- framework.Dependency -->
+        </test-method> <!-- SwipeTest1 -->
+      </class> <!-- com.indusos.plusi.Wowmain -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

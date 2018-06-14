@@ -10,7 +10,7 @@ public class PageNavigation
     public void Scrolluppage(AndroidDriver<MobileElement>dr) throws InterruptedException
 	     {
     		 Thread.sleep(5000);
-    		 dr.swipe(400,1270,400,100,100);
+    		 dr.swipe(377,1180,339,65,2000);
 		 
    	      }
 	
@@ -18,7 +18,7 @@ public class PageNavigation
     public void Scrolldownpage(AndroidDriver<MobileElement>dr) throws InterruptedException
         {
     	  Thread.sleep(5000);
-		  dr.swipe(432,390,317,1016,200);
+		  dr.swipe(339,65,377,1180,2000);
 		   
 	     }
 	
@@ -26,15 +26,15 @@ public class PageNavigation
 
      public boolean Scrollleft(AndroidDriver<MobileElement> dr)
        {
-	   dr.swipe(578, 470, 580, 1765,500);
-	    return false;
+	   dr.swipe( 554,655, 156, 607,500);
+	    return true;
        }
 
 
      // Swipe right 
     public boolean Scrollright(AndroidDriver<MobileElement> dr)
     {	
-		dr.swipe(578, 470, 580, 1765,500);
+		dr.swipe(156, 607, 554, 655,500);
 		return false;
     }
 
